@@ -53,3 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+<script>
+  const menuItem = document.querySelector('.menu-item');
+  const dropdown = document.querySelector('.dropdown');
+
+  menuItem.addEventListener('click', () => {
+    dropdown.classList.toggle('open');
+  });
+</script>
