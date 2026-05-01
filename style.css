@@ -173,13 +173,3 @@ body {
     }
 
 
-html, body {
-    width: 1440px;
-    min-width: 1440px;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    overflow-x: auto;
-}
