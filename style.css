@@ -1,0 +1,333 @@
+.lada-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* центр по вертикали */
+    transform: translateY(-50px); /* вверх */
+    height: 100%;
+    padding-left: 150px;
+    color: white;
+}
+
+.lada-cont h2 {
+    font-size: 50px;
+    transform: translateY(245px); /* вверх */
+    text-transform: uppercase;
+    padding-left: 150px;
+    right: 100px;
+}
+
+.lada-cont p {
+    transform: translateY(255px); /* вверх */
+    font-size: 22px;
+    padding-left: 150px;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-left: 140px;
+    transform: translateY(270px); /* вверх */
+    padding: 10px 25px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color:#ff8c1a;
+}
+.strelki-cont {
+    position: absolute;
+
+    top: 650px;   
+    transform: translateY(95px); /* вверх */
+    right: 1700px;    
+
+    display: flex;
+    gap: 10px;
+}
+
+
+.strelki {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    border: 2px solid white;
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.strelki:hover {
+    border-color: chocolate; /* меняется только обводка */
+    color: chocolate;        /* и сама стрелка */
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cookie-banner button {
+    background: chocolate;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#accept-cookies {
+    pointer-events: auto;
+    position: relative;
+    z-index: 1000000;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* база */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+/* внутренняя линия */
+.header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center; /* 🔥 важно */
+    justify-content: space-between;
+    padding: 0 20px;
+}
+/* ЛОГО */
+.logo {
+    height: 80px;
+    width: auto;
+    flex-shrink: 0; /* 🔥 запрещает сжатию/раздвижению */
+}
+
+/* МЕНЮ */
+.nav {
+    display: flex;
+    gap: 35px;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.nav a {
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+    color: #222;
+      text-decoration: none !important;
+    
+}
+.nav a:hover {
+    color: #ff6a00; /* фирменный оранжевый */
+}
+
+/* ИКОНКИ СПРАВА */
+.header-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.lada-cont {
+    margin-top: 80px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* стрелки — НЕ ТРОГАЕМ ТВОИ, только позиционируем */
+.strelki-cont {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+/* ползунок */
+.progress {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.bar {
+    width: 60px;
+    height: 3px;
+    background: rgba(255,255,255,0.4);
+}
+
+.bar.active {
+    background: white;
+}
+
+.slider {
+    position: relative; /* 🔥 ЭТО ОБЯЗАТЕЛЬНО */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* 🔥 ВАЖНО — чтобы ползунок не уехал вниз */
+.progress {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* стрелки */
+.strelki-cont {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* фикс, чтобы ничего не исчезало */
+.lada-cont {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* стрелки */
+.strelki-cont {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
+}
+
+/* ползунок */
+.progress {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.bar {
+    width: 60px;
+    height: 3px;
+    background: rgba(255,255,255,0.4);
+}
+
+.bar.active {
+    background: white;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* разные картинки */
+.slide:nth-child(1) {
+    background-image: url("granta.jpg");
+}
+
+.slide:nth-child(2) {
+    background-image: url("vesta.jpg");
+}
+
+.slide:nth-child(3) {
+    background-image: url("niva.jpg");
+}
