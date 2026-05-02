@@ -26,7 +26,7 @@ lada-cont {
 .button {
     display: inline-block;
     margin-left: 140px;
-    transform: translateY(270px); /* вверх */
+    transform: translateY(70px); /* вверх */
     padding: 10px 25px;
     background-color: chocolate;
     color: white;
