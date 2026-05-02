@@ -3,7 +3,7 @@
 
     /* 👉 общее перемещение блока */
     top: 500px;      /* вверх/вниз */
-    left: 0px;     /* влево/вправо */
+    left: 50px;     /* влево/вправо */
 
     display: flex;
     flex-direction: column;
