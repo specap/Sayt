@@ -13,7 +13,7 @@ lada-cont {
     transform: translateY(5px); /* вверх */
     text-transform: uppercase;
     padding-left: 150px;
-    right: 100px;
+    right: 80px;
 }
 
 .lada-cont p {
