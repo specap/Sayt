@@ -1,4 +1,4 @@
-lada-cont {
+.lada-cont {
     display: flex;
     flex-direction: column;
     justify-content: center; /* центр по вертикали */
