@@ -376,36 +376,4 @@ body {
   background: #f5f5f5;
 }
 
-/* Стрелки на мобильных устройствах */
-@media (max-width: 768px) {
-    .strelki-cont {
-        left: 0 !important;
-        right: 0 !important;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .strelки {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        background: rgba(0,0,0,0.3);
-        border: 2px solid white;
-        border-radius: 50%;
-        color: white;
-    }
-
-    /* нижний ползунок остаётся на месте, можно чуть увеличить для мобильных */
-    .progress {
-        bottom: 15px;
-    }
-
-    .bar {
-        width: 40px; /* чуть меньше для мобильных */
-        height: 4px;
-    }
-}
 
