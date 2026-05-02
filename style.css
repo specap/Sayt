@@ -10,7 +10,7 @@ lada-cont {
 
 .lada-cont h2 {
     font-size: 50px;
-    transform: translateY(50px); /* вверх */
+    transform: translateY(10px); /* вверх */
     text-transform: uppercase;
     padding-left: 150px;
     right: 100px;
