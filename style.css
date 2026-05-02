@@ -1,31 +1,32 @@
-.lada-cont {
+ lada-cont {
     display: flex;
     flex-direction: column;
     justify-content: center; /* центр по вертикали */
-    margin-top: 150px;
+    transform: translateY(-50px); /* вверх */
+    height: 100%;
     padding-left: 150px;
     color: white;
 }
 
 .lada-cont h2 {
     font-size: 50px;
-   margin-top: 10px;
+    transform: translateY(245px); /* вверх */
     text-transform: uppercase;
     padding-left: 150px;
     right: 100px;
 }
 
 .lada-cont p {
-    margin-top: 150px;
+    transform: translateY(255px); /* вверх */
     font-size: 22px;
     padding-left: 150px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .button {
     display: inline-block;
     margin-left: 140px;
-    margin-top: 10px;
+    transform: translateY(270px); /* вверх */
     padding: 10px 25px;
     background-color: chocolate;
     color: white;
