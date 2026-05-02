@@ -2,7 +2,7 @@ lada-cont {
     display: flex;
     flex-direction: column;
     justify-content: center; /* центр по вертикали */
-    transform: translateY(50px); /* вверх */
+    transform: translateY(-50px); /* вверх */
     height: 100%;
     padding-left: 150px;
     color: white;
@@ -10,14 +10,14 @@ lada-cont {
 
 .lada-cont h2 {
     font-size: 50px;
-    transform: translateY(9px); /* вверх */
+    transform: translateY(-50px); /* вверх */
     text-transform: uppercase;
     padding-left: 150px;
     right: 100px;
 }
 
 .lada-cont p {
-    transform: translateY(150px); /* вверх */
+    transform: translateY(-50px); /* вверх */
     font-size: 22px;
     padding-left: 150px;
     margin-top: 15px;
