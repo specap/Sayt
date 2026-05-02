@@ -2,7 +2,7 @@
     position: relative;
 
     /* 👉 общее перемещение блока */
-    top: 0px;      /* вверх/вниз */
+    top: 10px;      /* вверх/вниз */
     left: 0px;     /* влево/вправо */
 
     display: flex;
