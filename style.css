@@ -1,4 +1,4 @@
-.lada-cont {
+lada-cont {
     display: flex;
     flex-direction: column;
     justify-content: center; /* центр по вертикали */
@@ -330,55 +330,5 @@ body {
 
 .slide:nth-child(3) {
     background-image: url("niva.jpg");
-}
-
-/* Стрелки — видимы и по центру слайдера */
-.strelki-cont {
-    position: absolute !important;
-    top: 50% !important;
-    left: 20px !important;
-    right: 20px !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transform: translateY(-50%);
-}
-
-/* Стрелки сами */
-.strelки {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    background: rgba(0,0,0,0.3);
-    border: 2px solid white;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-/* Нижний ползунок */
-.progress {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 100;
-}
-
-.bar {
-    width: 40px;
-    height: 4px;
-    background: rgba(255,255,255,0.4);
-    cursor: pointer;
-}
-
-.bar.active {
-    background: white;
 }
 
