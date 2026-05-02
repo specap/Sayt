@@ -52,7 +52,5 @@ document.addEventListener("DOMContentLoaded", function () {
         banner.style.display = "none";
     });
 
-    console.log("next button:", next);
-console.log("prev button:", prev);
-console.log("bars:", bars.length);
+});
 
