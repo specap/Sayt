@@ -284,4 +284,224 @@
         }
 
         .load-more-btn {
-            display: block
+            display: block;
+            width: 100%;
+            background-color: #e0e0e0;
+            border: none;
+            padding: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .load-more-btn:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* Подвал (Footer) */
+        .site-footer {
+            background-color: #111111;
+            color: #999999;
+            padding: 50px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        .footer-wrap {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-column h4 {
+            color: #ffffff;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            color: #ff6600;
+        }
+
+        /* Адаптивность для телефонов и планшетов */
+        @media (max-width: 992px) {
+            .main-catalog-layout {
+                flex-direction: column;
+            }
+            .sidebar-filters {
+                width: 100%;
+            }
+            .car-item-card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .top-banners {
+                flex-direction: column;
+            }
+            .car-item-card {
+                width: 100%;
+            }
+            .header-wrap {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="#">AutoSpace</a>
+            </div>
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="#">Модельный ряд</a></li>
+                    <li><a href="#">Покупателям</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="page-crumbs">Главная / Автомобили в наличии</div>
+        
+        <h1 class="page-title">Новые авто в наличии</h1>
+
+        <div class="top-banners">
+            <div class="banner-box banner-largus">
+                <div>
+                    <h2>Выгодный Трейд-ин</h2>
+                    <p>LADA LARGUS ОТ 1 134 000 РУБ.</p>
+                </div>
+                <a href="#" class="banner-link">Узнать больше</a>
+            </div>
+            <div class="banner-box banner-granta">
+                <div>
+                    <h2>Специальный кредит</h2>
+                    <p>LADA GRANTA С ВЫГОДОЙ ДО 334 000 РУБ.</p>
+                </div>
+                <a href="#" class="banner-link">Рассчитать</a>
+            </div>
+        </div>
+
+        <div class="info-counter-bar">
+            <div>Найдено: <span>45</span> автомобилей</div>
+            <div>Город: <b>Тольятти</b></div>
+        </div>
+
+        <div class="main-catalog-layout">
+            
+            <aside class="sidebar-filters">
+                <div class="filter-group">
+                    <div class="filter-name">Цена: <span class="filter-val-orange">до 2 500 000 ₽</span></div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-name">Модель: Все</div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-name">Коробка передач</div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-name">Цвет кузова</div>
+                </div>
+            </aside>
+
+            <div class="cars-container">
+                <div class="cars-flex-grid">
+                    
+                    <div class="car-card-item car-item-card">
+                        <div class="car-item-title">Granta Седан</div>
+                        <div class="car-item-version">Classic Plus</div>
+                        <img src="img/granta_white.png" alt="Granta Белая" class="car-item-image">
+                        <div class="car-badge">Госпрограмма -20%</div>
+                        <div class="car-price-block">
+                            <div class="car-price-main">820 000 ₽</div>
+                            <div class="car-price-credit">В кредит от<div>4 900 ₽/мес</div></div>
+                        </div>
+                    </div>
+
+                    <div class="car-card-item car-item-card">
+                        <div class="car-item-title">Granta Седан</div>
+                        <div class="car-item-version">Comfort</div>
+                        <img src="img/granta_black.png" alt="Granta Черная" class="car-item-image">
+                        <div class="car-badge">Выгода по Трейд-ин</div>
+                        <div class="car-price-block">
+                            <div class="car-price-main">850 000 ₽</div>
+                            <div class="car-price-credit">В кредит от<div>5 200 ₽/мес</div></div>
+                        </div>
+                    </div>
+
+                    <div class="car-card-item car-item-card">
+                        <div class="car-item-title">Niva Travel</div>
+                        <div class="car-item-version">Classic</div>
+                        <img src="img/niva_travel.png" alt="Niva Travel" class="car-item-image">
+                        <div class="car-badge">4x4 полный привод</div>
+                        <div class="car-price-block">
+                            <div class="car-price-main">1 210 000 ₽</div>
+                            <div class="car-price-credit">В кредит от<div>7 100 ₽/мес</div></div>
+                        </div>
+                    </div>
+
+                    <div class="more-btn-box">
+                        <button class="load-more-btn">Показать ещё машины</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-wrap">
+            <div class="footer-column">
+                <h4>Модельный ряд</h4>
+                <ul>
+                    <li><a href="#">Седаны</a></li>
+                    <li><a href="#">Внедорожники</a></li>
+                    <li><a href="#">Коммерческие</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Автокредит</a></li>
+                    <li><a href="#">Оценка Трейд-ин</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="#">Адрес дилера</a></li>
+                    <li><a href="#">Заказать звонок</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
