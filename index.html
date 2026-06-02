@@ -5,133 +5,112 @@
     <link rel="stylesheet" href="style.css">
     <title>Lada.ru</title>
 </head>
-
 <body>
     
+    <header class="header">
+        <div class="header-inner">
+
+            <div class="logo-block">
+                <img src="logo.png" alt="LADA" class="logo">
+            </div>
+
+            <nav class="nav">
+                <div class="menu-item-container">
+                    <a href="#">Модельный ряд</a>
+                    
+                    <div class="mega-menu">
+                        <div class="mega-top">
+                            <span>Granta</span>
+                            <span>Vesta</span>
+                            <span>Niva</span>
+                            <span>Largus</span>
+                        </div>
+
+                        <div class="mega-cars">
+                            <div class="mega-card">
+                                <img src="granta.png">
+                                <p>GRANTA СЕДАН</p>
+                            </div>
+
+                            <div class="mega-card">
+                                <img src="vesta.png">
+                                <p>VESTA</p>
+                            </div>
+
+                            <div class="mega-card">
+                                <img src="niva.png">
+                                <p>NIVA TRAVEL</p>
+                            </div>
+
+                            <div class="mega-card">
+                                <img src="largus.png">
+                                <p>LARGUS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#">Покупателям</a>
+                <a href="#">Владельцам</a>
+                <a href="#">Автомобили в наличии</a>
+                <a href="#">Дилеры</a>
+                <a href="#">Бренд</a>
+                <a href="#">Новым поставщикам</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+            <div class="header-icons">
+                <span>🔍</span>
+                <span>📍</span>
+            </div>
+
+        </div>
+    </header>
+
     <div class="slider">
+        <div class="slides">
+            <div class="slide" style="background-image: url('granta.jpg')">
+                <div class="lada-cont">
+                    <h2>LADA GRANTA C ВЫГОДОЙ ДО 333.000 РУБ.</h2>
+                    <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
+                    <button class="button">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
 
-    <div class="slides">
+            <div class="slide" style="background-image: url('vesta.jpg')">
+                <div class="lada-cont vesta">
+                    <h2>LADA VESTA ОТ 1.187.000 РУБ.</h2>
+                    <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
+                    <button class="button">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
 
-        <div class="slide" style="background-image: url('granta.jpg')">
-            <div class="lada-cont">
-                <h2>LADA GRANTA C ВЫГОДОЙ ДО 333.000 РУБ.</h2>
-                <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
-                <button class="button">ПОДРОБНЕЕ</button>
+            <div class="slide" style="background-image: url('niva.jpg')">
+                <div class="lada-cont">
+                    <h2>LADA NIVA TRAVEL ОТ 1.075.000 РУБ.</h2>
+                    <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
+                    <button class="button">ПОДРОБНЕЕ</button>
+                </div>
             </div>
         </div>
 
-        <div class="slide" style="background-image: url('vesta.jpg')">
-            <div class="lada-cont vesta">
-                <h2>LADA VESTA ОТ 1.187.000 РУБ.</h2>
-                <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
-                <button class="button">ПОДРОБНЕЕ</button>
-            </div>
+        <div class="strelki-cont">
+            <button class="strelki prev">&lt;</button>
+            <button class="strelki next">&gt;</button>
         </div>
 
-        <div class="slide" style="background-image: url('niva.jpg')">
-            <div class="lada-cont">
-                <h2>LADA NIVA TRAVEL ОТ 1.075.000 РУБ.</h2>
-                <p>НАБИРАЙТЕ ОБОРОТЫ ВМЕСТЕ С ВЕСНОЙ!</p>
-                <button class="button">ПОДРОБНЕЕ</button>
-            </div>
+        <div class="progress">
+            <div class="bar active"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-
-        <div class="menu">
-  <div class="menu-item">
-    Модельный ряд
-    <div class="dropdown">
-      <div class="car">Granta седан</div>
-      <div class="car">Granta лифтбек</div>
-      <div class="car">Granta Cross</div>
-  </div>
-</div>
-
-    </div>
-    </div>
-     <div class="strelki-cont">
-        <button class="strelki prev"><</button>
-        <button class="strelki next">></button>
     </div>
 
-    <div class="progress">
-        <div class="bar active"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <div id="cookie-banner" class="cookie-banner">
+        <span>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, вы соглашаетесь с п̲о̲л̲и̲т̲и̲к̲о̲й̲ о̲б̲р̲а̲б̲о̲т̲к̲и̲ п̲е̲р̲с̲о̲н̲а̲л̲ь̲н̲ы̲х̲ д̲а̲н̲н̲ы̲х̲ и разрешаете использование cookie-файлов. Вы также всегда можете отключить cookie-файлы в настройках Вашего браузера.</span>
+        <button id="accept-cookies">Принять</button>
     </div>
 
-        <div class="mega-menu">
-
-    <div class="mega-top">
-        <span>Granta</span>
-        <span>Vesta</span>
-        <span>Niva</span>
-        <span>Largus</span>
-    </div>
-
-    <div class="mega-cars">
-
-        <div class="mega-card">
-            <img src="granta.png">
-            <p>GRANTA СЕДАН</p>
-        </div>
-
-        <div class="mega-card">
-            <img src="vesta.png">
-            <p>VESTA</p>
-        </div>
-
-        <div class="mega-card">
-            <img src="niva.png">
-            <p>NIVA TRAVEL</p>
-        </div>
-
-        <div class="mega-card">
-            <img src="largus.png">
-            <p>LARGUS</p>
-        </div>
-
-    </div>
-
-</div>
-
-
+    <script src="script.js"></script>
 </body>
-
-</body>
-
- <script src="script.js"></script>
-
-<body>
-<div id="cookie-banner" class="cookie-banner">
-    <span>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, вы соглашаетесь с п̲о̲л̲и̲т̲и̲к̲о̲й̲ о̲б̲р̲а̲б̲о̲т̲к̲и̲ п̲е̲р̲с̲о̲н̲а̲л̲ь̲н̲ы̲х̲ д̲а̲н̲н̲ы̲х̲ и разрешаете использование cookie-файлов. Вы также всегда можете отключить cookie-файлы в настройках Вашего браузера.</span>
-    <button id="accept-cookies">Принять</button>
-</div>
-
-<script src="script.js"></script>
-</body>
-
-<header class="header">
-    <div class="header-inner">
-
-        <div class="logo-block">
-            <img src="logo.png" alt="LADA" class="logo">
-        </div>
-
-        <nav class="nav">
-            <a href="#">Модельный ряд</a>
-            <a href="#">Покупателям</a>
-            <a href="#">Владельцам</a>
-            <a href="#">Автомобили в наличии</a>
-            <a href="#">Дилеры</a>
-            <a href="#">Бренд</a>
-            <a href="#">Новым поставщикам</a>
-            <a href="#">Контакты</a>
-        </nav>
-
-        <div class="header-icons">
-            <span>🔍</span>
-            <span>📍</span>
-        </div>
-
-    </div>
-</header>
+</html>
