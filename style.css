@@ -330,90 +330,145 @@ body {
     background-image: url("niva.jpg");
 }
 
-/* МЕГА МЕНЮ */
-
-.nav a:first-child {
-    position: relative;
-}
-
-/* окно */
+/* МЕГА МЕНЮ — ОСНОВНОЙ КОНТЕЙНЕР */
 .mega-menu {
-    position: absolute;
-
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 1200px;
-
-    background: #f5f5f5;
-
+    position: fixed; /* Чтобы растянуть на весь экран независимо от шапки */
+    top: 70px;       /* Высота твоей шапки */
+    left: 0;
+    width: 100vw;    /* Вся ширина экрана */
+    background: #fff;
     opacity: 0;
     visibility: hidden;
-
-    transition: 0.3s ease;
-
+    transition: opacity 0.25s ease, visibility 0.25s ease;
     z-index: 9999;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-/* показать */
-.nav a:first-child:hover + .mega-menu,
+/* Показ при ховере (на контейнер или на само меню) */
+.menu-item-container:hover .mega-menu,
 .mega-menu:hover {
     opacity: 1;
     visibility: visible;
 }
 
-/* верхняя полоска */
+/* ВЕРХНЯЯ ОРАНЖЕВАЯ ПОЛОСА */
 .mega-top {
     display: flex;
-    gap: 40px;
-
-    padding: 18px 30px;
-
-    background: #d68439;
-    color: white;
-
-    font-weight: bold;
+    gap: 5px;
+    padding: 0 100px; /* Отступы слева и справа как на сайте */
+    background: #d68439; /* Фирменный оранжевый */
 }
 
-/* карточки */
+.mega-tab {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mega-tab:hover, 
+.mega-tab.active {
+    background: #ffffff;
+    color: #d68439;
+}
+
+/* БЕЛЫЙ БЛОК С КОНТЕНТОМ */
+.mega-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* СЕТКА С КАРТОЧКАМИ */
 .mega-cars {
     display: grid;
-
-    grid-template-columns: repeat(4,1fr);
-
-    gap: 25px;
-
-    padding: 35px;
+    /* 4 колонки в ряд, автоматический перенос */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 40px 100px;
 }
 
-/* карточка */
+/* КАРТОЧКА МАШИНЫ */
 .mega-card {
-    background: white;
-
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
     cursor: pointer;
-
-    transition: 0.3s;
+    transition: 0.2s ease;
 }
 
 .mega-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* картинки */
+/* Текст внутри карточки (вверху слева) */
+.card-text {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-type {
+    font-size: 11px;
+    font-weight: 800;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* Картинка машины (выравнивание по центру/низу) */
 .mega-card img {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    object-fit: contain;
 }
 
-/* текст */
-.mega-card p {
-    margin-top: 15px;
+/* НИЖНЯЯ ПАНЕЛЬ С ИКОНКАМИ */
+.mega-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 равные колонки */
+    border-top: 1px solid #e5e5e5;
+    background: #ffffff;
+}
 
-    font-size: 14px;
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-decoration: none !important;
+    border-right: 1px solid #e5e5e5;
+    transition: background 0.2s;
+}
+
+.footer-item:last-child {
+    border-right: none;
+}
+
+.footer-item:hover {
+    background: #fafafa;
+}
+
+/* Иконки (в оригинале там контурные картинки, пока заменяем символами) */
+.footer-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #d68439;
+}
+
+/* Текст внизу */
+.footer-text {
+    font-size: 11px;
     font-weight: bold;
+    color: #444;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
