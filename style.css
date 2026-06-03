@@ -472,45 +472,5 @@ body {
     text-align: center;
 }
 
-/* 1. Фундамент карточки: высота зафиксирована, она никогда не меняется */
-.car-card {
-    position: relative;     /* Обязательно: это контекст для absolute-элементов */
-    height: 450px;          /* Строго фиксированная высота */
-    background: #fff;
-    border: 1px solid #e2e5e8;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;       /* Скрываем всё, что вылезет за границы при анимации */
-    transition: box-shadow 0.3s ease;
-}
 
-/* Эффект при наведении: только тень, никаких сдвигов сетки */
-.car-card:hover {
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    z-index: 10;
-    border-color: #d68439; /* Можно подсветить рамку, если нужно */
-}
 
-/* 2. Появляющийся контент: "левитирует" поверх карточки */
-.car-card-hover-content {
-    position: absolute;     /* Вырываем из потока сетки */
-    bottom: -100px;         /* Прячем изначально за нижней границей */
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: white;
-    transition: bottom 0.3s ease, opacity 0.3s ease;
-    opacity: 0;             /* Скрыт */
-}
-
-/* 3. Анимация появления */
-.car-card:hover .car-card-hover-content {
-    bottom: 0;              /* Выезжает снизу вверх */
-    opacity: 1;
-}
-
-/* 4. ЗАЩИТА ОТ ПОДЧЕРКИВАНИЯ */
-/* Если ссылки подчеркиваются, добавьте это: */
-.car-card a {
-    text-decoration: none !important;
-}
