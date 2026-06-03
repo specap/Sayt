@@ -472,3 +472,28 @@ body {
     text-align: center;
 }
 
+/* 1. Стили для контейнера, который будет "выплывать" */
+.car-card-hover-content {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.3s ease; /* Плавность появления */
+    overflow: hidden;
+}
+
+/* 2. Эффект при наведении на всю карточку */
+.car-card:hover {
+    transform: scale(1.03); /* Увеличение карточки */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Тень для объема */
+    z-index: 10;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3. Делаем элементы видимыми при наведении */
+.car-card:hover .car-card-hover-content {
+    opacity: 1;
+    visibility: visible;
+    max-height: 200px; /* Достаточная высота для блока */
+    margin-top: 15px;
+}
+
