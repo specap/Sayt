@@ -472,39 +472,38 @@ body {
     text-align: center;
 }
 
-/* 1. Скрытый блок внутри карточки */
-.car-card-hover-content {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none; /* Чтобы кнопка не нажималась, пока блок невидим */
-    height: 0;            /* Чтобы не занимал место, пока скрыт */
-    overflow: hidden;
-}
-
-/* 2. Эффект при наведении на карточку */
+/* 1. Карточка — «каменная» */
 .car-card {
-    min-height: 450px; /* Установите значение, которое подходит под ваши карточки */
+    position: relative;
+    height: 450px; /* Фиксируем высоту раз и навсегда */
+    background: #fff;
+    border: 1px solid #e2e5e8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e2e5e8;
-    background: #fff;
-    /* Важно: добавляем z-index, чтобы при увеличении карточка была сверху */
-    position: relative;
+    overflow: hidden; /* Обрезаем всё, что пытается выйти за границы */
+    transition: box-shadow 0.3s ease;
 }
 
 .car-card:hover {
-    transform: scale(1.05); /* Увеличение на 5% */
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     z-index: 10;
 }
 
-/* 3. Появление контента */
+/* 2. Контент — «призрак» (не занимает места в сетке) */
+.car-card-hover-content {
+    position: absolute; /* Ключевой момент: он больше не толкает элементы */
+    bottom: -60px;      /* Прячем блок под карточкой */
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    transition: bottom 0.3s ease;
+    opacity: 0;
+}
+
+/* 3. Появление */
 .car-card:hover .car-card-hover-content {
+    bottom: 0;          /* Блок выезжает вверх */
     opacity: 1;
-    pointer-events: auto; /* Разрешаем клики */
-    height: auto;         /* Показываем реальную высоту */
-    margin-top: 15px;
 }
 
