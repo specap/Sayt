@@ -472,7 +472,8 @@ body {
     text-align: center;
 }
 
-/* Изолированные стили для второй страницы */
+/* --- Стили для страницы details --- */
+
 .details-page-wrapper .header {
     background: #fff;
     border-bottom: 1px solid #eee;
@@ -488,11 +489,13 @@ body {
 .details-page-wrapper h1 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #333;
 }
 
+/* Черный блок с акцией */
 .details-page-wrapper .trade-in-block {
     background-color: #222;
-    color: white;
+    color: #ffffff;
     padding: 40px;
     margin-top: 30px;
 }
@@ -513,6 +516,10 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
+    display: inline-block;
 }
 
+.details-page-wrapper .button:hover {
+    background-color: #e65c00;
+}
 
