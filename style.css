@@ -472,4 +472,31 @@ body {
     text-align: center;
 }
 
+/* Пример: Стили для кнопки только на этой странице */
+.details-page-wrapper .button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Пример: Стили для темного блока только на этой странице */
+.details-page-wrapper .trade-in-block {
+    background-color: #222;
+    color: #ffffff;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+/* Пример: Стили для текста цены */
+.details-page-wrapper .price {
+    color: #ff6600;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
 
