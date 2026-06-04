@@ -472,31 +472,47 @@ body {
     text-align: center;
 }
 
-/* Пример: Стили для кнопки только на этой странице */
-.details-page-wrapper .button {
-    background-color: #ff6600;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
+/* Изолированные стили для второй страницы */
+.details-page-wrapper .header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
 }
 
-/* Пример: Стили для темного блока только на этой странице */
+.details-page-wrapper .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.details-page-wrapper h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
 .details-page-wrapper .trade-in-block {
     background-color: #222;
-    color: #ffffff;
+    color: white;
     padding: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-/* Пример: Стили для текста цены */
 .details-page-wrapper .price {
     color: #ff6600;
     font-size: 28px;
     font-weight: bold;
     margin: 15px 0;
+}
+
+.details-page-wrapper .button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 
