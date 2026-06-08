@@ -514,28 +514,11 @@ body { margin: 0; font-family: 'Arial', sans-serif; background: #fff; }
     text-transform: uppercase; 
 }
 
-/* Полный сброс всех дефолтных стилей браузера */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
-}
-
-/* Отладка блоков */
-.container-block { position: relative; border: 2px dashed #ff0000; margin: 20px; padding: 30px; }
-.container-block::before { content: "БЛОК " attr(data-number); position: absolute; top: 0; left: 0; background: #ff0000; color: #fff; padding: 4px 10px; font-size: 10px; font-weight: bold; }
-
-/* Общие стили */
-body.page-body-root-container { font-family: 'Lada', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.5; }
-
-/* Сетка Header */
-.main-header-root { width: 100%; border-bottom: 1px solid #e0e0e0; background: #fff; }
-.header-inner-fixed-wrapper { max-width: 1440px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
-
-/* Сетка карточек (полностью развернутая) */
-.grid-layout-items-wrapper { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px; padding: 40px 0; }
-.car-card-model-component { border: 1px solid #dcdcdc; border-radius: 12px; transition: all 0.3s ease; }
-
-/* Кнопки */
-.btn-primary-cta-element-large { display: inline-block; padding: 24px 60px; background-color: #c8102e; color: #ffffff; font-weight: 800; text-decoration: none; border-radius: 4px; }
-
-/* Подвал */
-.main-footer-root-container { background-color: #1a1a1a; color: #ffffff; padding: 80px 40px; }
+.header { position: relative; z-index: 1000; background-color: #fff; border-bottom: 1px solid #e0e0e0; height: 80px; display: flex; align-items: center; }
+.header_fixed { position: fixed; top: 0; left: 0; width: 100%; }
+.container_header { max-width: 1440px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+.nav-list { display: flex; list-style: none; margin: 0; padding: 0; }
+.nav-list__item { margin-right: 32px; }
+.nav-list__link { text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 14px; text-transform: uppercase; }
+.header__logo-img { height: 32px; }
+.header__user-btn { background: none; border: 1px solid #1a1a1a; padding: 8px 16px; cursor: pointer; border-radius: 4px; }
