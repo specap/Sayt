@@ -513,73 +513,29 @@ body { margin: 0; font-family: 'Arial', sans-serif; background: #fff; }
     cursor: pointer; 
     text-transform: uppercase; 
 }
-/* Базовые настройки */
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+
+/* Полный сброс всех дефолтных стилей браузера */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* Отладка блоков */
+.container-block { position: relative; border: 2px dashed #ff0000; margin: 20px; padding: 30px; }
+.container-block::before { content: "БЛОК " attr(data-number); position: absolute; top: 0; left: 0; background: #ff0000; color: #fff; padding: 4px 10px; font-size: 10px; font-weight: bold; }
 
-/* Шапка */
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-}
+/* Общие стили */
+body.page-body-root-container { font-family: 'Lada', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.5; }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+/* Сетка Header */
+.main-header-root { width: 100%; border-bottom: 1px solid #e0e0e0; background: #fff; }
+.header-inner-fixed-wrapper { max-width: 1440px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+/* Сетка карточек (полностью развернутая) */
+.grid-layout-items-wrapper { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px; padding: 40px 0; }
+.car-card-model-component { border: 1px solid #dcdcdc; border-radius: 12px; transition: all 0.3s ease; }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Карточки авто */
-.car-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-/* Кнопка */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d32f2f;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #b71c1c;
-}
+/* Кнопки */
+.btn-primary-cta-element-large { display: inline-block; padding: 24px 60px; background-color: #c8102e; color: #ffffff; font-weight: 800; text-decoration: none; border-radius: 4px; }
 
 /* Подвал */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #fff;
-    margin-top: 40px;
-}
+.main-footer-root-container { background-color: #1a1a1a; color: #ffffff; padding: 80px 40px; }
