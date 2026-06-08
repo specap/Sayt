@@ -1,106 +1,25 @@
-<!DOCTYPE html>
-<html lang="ru" dir="ltr" class="js-focus-visible">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lada Легко — проще, чем владеть | Официальный проект</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body class="page-body-root-container">
-
-    <!-- БЛОК 1: Шапка сайта (Header) -->
-    <header class="main-header-root container-block" data-number="1" role="banner">
-        <div class="header-inner-fixed-wrapper">
-            <div class="header-left-slot">
-                <div class="logo-box-main">
-                    <a href="/" class="logo-link-main" aria-label="На главную страницу Lada">
-                        <span class="logo-svg-placeholder"></span>
-                    </a>
+<div id="app">
+    <header class="header header_fixed">
+        <div class="container container_header">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <img src="logo.svg" alt="LADA" class="header__logo-img">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="/models" class="nav-list__link">Модельный ряд</a></li>
+                    <li class="nav-list__item"><a href="/buyers" class="nav-list__link">Покупателям</a></li>
+                    <li class="nav-list__item"><a href="/owners" class="nav-list__link">Владельцам</a></li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__dealers">
+                    <a href="/dealers" class="header__dealers-link">Дилеры</a>
                 </div>
-            </div>
-            
-            <div class="header-center-slot">
-                <nav class="navigation-primary-menu" role="navigation">
-                    <ul class="nav-menu-list-wrapper">
-                        <li class="nav-menu-item-primary"><a href="#" class="nav-link-anchor-primary">Модельный ряд</a></li>
-                        <li class="nav-menu-item-primary"><a href="#" class="nav-link-anchor-primary">Покупателям</a></li>
-                        <li class="nav-menu-item-primary"><a href="#" class="nav-link-anchor-primary">Владельцам</a></li>
-                        <li class="nav-menu-item-primary"><a href="#" class="nav-link-anchor-primary">Сервисные акции</a></li>
-                        <li class="nav-menu-item-primary"><a href="#" class="nav-link-anchor-primary">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header-right-slot">
-                <div class="user-control-panel-wrapper">
-                    <button class="button-action-login-entry" type="button">Войти в профиль</button>
+                <div class="header__user">
+                    <button class="header__user-btn">Войти</button>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- БЛОК 2: Основная область контента -->
-    <main class="main-content-body-root container-block" data-number="2" role="main">
-        
-        <section class="hero-banner-component-wrapper">
-            <div class="hero-content-inner-layer">
-                <h1 class="main-page-title-h1">LADA ЛЕГКО — ПРОЩЕ, ЧЕМ ВЛАДЕТЬ</h1>
-                <div class="hero-subtitle-block">
-                    <p class="hero-text-description-lead">LADA VESTA ПО ПОДПИСКЕ — УДОБНОЕ РЕШЕНИЕ ДЛЯ ГОРОДА</p>
-                </div>
-                <div class="hero-cta-button-group">
-                    <a href="#" class="btn-primary-cta-element-large">ОФОРМИТЬ ЗАЯВКУ</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- БЛОК 3: Сетка моделей (Каталог) -->
-        <section class="catalog-models-grid-section container-block" data-number="3">
-            <div class="catalog-grid-inner-container">
-                <div class="catalog-heading-wrapper">
-                    <h2 class="section-main-heading-title">Выберите ваш автомобиль</h2>
-                </div>
-                
-                <div class="grid-layout-items-wrapper">
-                    <!-- БЛОК 4: Карточка (полная структура) -->
-                    <article class="car-card-model-component container-block" data-number="4">
-                        <div class="card-image-box-wrapper">
-                            <div class="card-image-ratio-container">
-                                <img src="lada-vesta.jpg" alt="Lada Vesta" class="car-card-image-source">
-                            </div>
-                        </div>
-                        <div class="card-info-details-box">
-                            <h3 class="card-model-title-text">LADA Vesta</h3>
-                            <div class="card-features-list-wrapper">
-                                <ul class="features-list-ul">
-                                    <li class="feature-item-li">Комфорт</li>
-                                    <li class="feature-item-li">Надежность</li>
-                                </ul>
-                            </div>
-                            <div class="card-price-container">
-                                <span class="price-value-amount">43 990</span>
-                                <span class="price-currency-label">руб./мес.</span>
-                            </div>
-                            <div class="card-action-wrapper">
-                                <button class="btn-card-select-action">Перейти к оформлению</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- БЛОК 5: Футер -->
-    <footer class="main-footer-root-container container-block" data-number="5" role="contentinfo">
-        <div class="footer-inner-content-wrapper">
-            <div class="footer-info-group">
-                <p class="footer-copyright-text">© 2026 АО «АВТОВАЗ». Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
