@@ -54,3 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+document.getElementById('ownersBtn').addEventListener('click', function() {
+    const menu = document.getElementById('ownersMenu');
+    menu.classList.toggle('active');
+});
+
+// Дополнительно: закрытие при клике вне меню
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('ownersMenu');
+    const btn = document.getElementById('ownersBtn');
+    if (!menu.contains(event.target) && event.target !== btn) {
+        menu.classList.remove('active');
+    }
+});
+
