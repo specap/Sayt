@@ -523,23 +523,27 @@ body { margin: 0; font-family: 'Arial', sans-serif; background: #fff; }
 .header__logo-img { height: 32px; }
 .header__user-btn { background: none; border: 1px solid #1a1a1a; padding: 8px 16px; cursor: pointer; border-radius: 4px; }
 
-.owners-mega-menu {
-    display: none; /* Скрыто по умолчанию */
+.dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     z-index: 1000;
-    display: flex; /* Для размещения сайдбара и контента рядом */
 }
 
-.owners-mega-menu.active {
-    display: flex; /* Показываем при клике */
+.dropdown-menu.show {
+    display: block;
 }
 
-.owners-sidebar {
-    background: #e68d44; /* Оранжевый цвет как на скриншоте */
-    width: 300px;
+.dropdown-content {
+    display: flex;
     padding: 20px;
+    gap: 40px;
 }
+
+.sidebar { width: 250px; display: flex; flex-direction: column; gap: 10px; }
+.grid-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 400px; }
+.grid-card { border: 1px solid #ccc; padding: 20px; text-align: center; }
