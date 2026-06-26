@@ -38,33 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', () => {
+    const trigger = document.getElementById('owners-trigger');
+    const menu = document.getElementById('owners-dropdown');
 
-    const banner = document.getElementById("cookie-banner");
-    const button = document.getElementById("accept-cookies");
-
-    if (!banner || !button) {
-        console.log("Cookie elements not found");
-        return;
-    }
-
-    button.addEventListener("click", function () {
-        banner.style.display = "none";
+    trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        menu.classList.toggle('show');
     });
 
-});
-
-document.getElementById('ownersBtn').addEventListener('click', function() {
-    const menu = document.getElementById('ownersMenu');
-    menu.classList.toggle('active');
-});
-
-// Дополнительно: закрытие при клике вне меню
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('ownersMenu');
-    const btn = document.getElementById('ownersBtn');
-    if (!menu.contains(event.target) && event.target !== btn) {
-        menu.classList.remove('active');
-    }
+    // Закрыть при клике вне меню
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && e.target !== trigger) {
+            menu.classList.remove('show');
+        }
+    });
 });
 
