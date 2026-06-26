@@ -95,7 +95,7 @@
                 </div>
 
                 <a href="#">Покупателям</a>
-                <a href="#" id="owners-link">Владельцам</a>
+                <a href="#" id="owners-trigger">Владельцам</a>
                 <a href="available.html" target="_blank" class="footer-item">Автомобили в наличии</a>
                 <a href="#">Дилеры</a>
                 <a href="#">Бренд</a>
@@ -160,28 +160,33 @@
 </html>
 
 <div class="menu-item-container">
-    <button class="menu-trigger" id="ownersBtn">Владельцам</button>
-    
-    <div class="owners-mega-menu" id="ownersMenu">
-        <div class="owners-sidebar">
-            <a href="#">Сервис</a>
-            <a href="#">Поддержка</a>
-            <a href="#">Запчасти и аксессуары</a>
-            <a href="#">Владельцам автомобилей RENAULT</a>
-            <a href="#">Владельцам автомобилей NISSAN</a>
-        </div>
-        <div class="owners-content">
-            <h3>СЕРВИС</h3>
-            <ul>
-                <li><a href="#">Мобильное приложение МИР LADA</a></li>
-                <li><a href="#">Запись на сервис</a></li>
+    <a href="#" id="owners-trigger">Владельцам</a>
+    <div id="owners-dropdown" class="dropdown-menu">
+        <div class="dropdown-content">
+            <aside class="sidebar">
+                <a href="#">Сервис</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Запчасти и аксессуары</a>
+                <a href="#">Владельцам автомобилей RENAULT</a>
+                <a href="#">Владельцам автомобилей NISSAN</a>
+            </aside>
+            <main class="main-menu">
+                <h3>СЕРВИС</h3>
+                <ul>
+                    <li>Мобильное приложение МИР LADA</li>
+                    <li>О сервисе</li>
+                    <li>Акции и специальные программы</li>
+                    <li>Запись на сервис</li>
+                    <li>Калькулятор ТО</li>
+                    <li>Найти дилера</li>
                 </ul>
-        </div>
-        <div class="owners-grid">
-            <div class="grid-item">АКЦИИ И СПЕЦПРОГРАММЫ</div>
-            <div class="grid-item">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</div>
-            <div class="grid-item">КАЛЬКУЛЯТОР ТО</div>
-            <div class="grid-item">РУКОВОДСТВА</div>
+            </main>
+            <div class="grid-menu">
+                <div class="grid-card">АКЦИИ И СПЕЦПРОГРАММЫ</div>
+                <div class="grid-card">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ МИР LADA</div>
+                <div class="grid-card">КАЛЬКУЛЯТОР ТО</div>
+                <div class="grid-card">РУКОВОДСТВА ПО ЭКСПЛУАТАЦИИ</div>
+            </div>
         </div>
     </div>
 </div>
