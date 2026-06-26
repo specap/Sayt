@@ -522,3 +522,24 @@ body { margin: 0; font-family: 'Arial', sans-serif; background: #fff; }
 .nav-list__link { text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 14px; text-transform: uppercase; }
 .header__logo-img { height: 32px; }
 .header__user-btn { background: none; border: 1px solid #1a1a1a; padding: 8px 16px; cursor: pointer; border-radius: 4px; }
+
+.owners-mega-menu {
+    display: none; /* Скрыто по умолчанию */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex; /* Для размещения сайдбара и контента рядом */
+}
+
+.owners-mega-menu.active {
+    display: flex; /* Показываем при клике */
+}
+
+.owners-sidebar {
+    background: #e68d44; /* Оранжевый цвет как на скриншоте */
+    width: 300px;
+    padding: 20px;
+}
