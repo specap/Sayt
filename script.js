@@ -38,20 +38,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const trigger = document.getElementById('owners-trigger');
-    const menu = document.getElementById('owners-dropdown');
+document.addEventListener("DOMContentLoaded", function () {
 
-    trigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        menu.classList.toggle('show');
+    const banner = document.getElementById("cookie-banner");
+    const button = document.getElementById("accept-cookies");
+
+    if (!banner || !button) {
+        console.log("Cookie elements not found");
+        return;
+    }
+
+    button.addEventListener("click", function () {
+        banner.style.display = "none";
     });
 
-    // Закрыть при клике вне меню
-    document.addEventListener('click', (e) => {
-        if (!menu.contains(e.target) && e.target !== trigger) {
-            menu.classList.remove('show');
-        }
-    });
 });
 
+document.getElementById('ownersBtn').addEventListener('click', function() {
+    const menu = document.getElementById('ownersMenu');
+    menu.classList.toggle('active');
+});
+
+// Дополнительно: закрытие при клике вне меню
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('ownersMenu');
+    const btn = document.getElementById('ownersBtn');
+    if (!menu.contains(event.target) && event.target !== btn) {
+        menu.classList.remove('active');
+    }
